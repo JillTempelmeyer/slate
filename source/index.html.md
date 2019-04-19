@@ -25,6 +25,63 @@ This guide provides an overview for our merchants and partners of how to start u
 
 # Getting Started
 
+# Getting Started
+
+To get started using Actum's API, you'll want to follow these steps:
+
+## Register for a Test Account
+
+First, you will want to navigate to Actum's [Register for a Test Account](https://www.actumprocessing.com/register-test-account/) page. You will need to enter your First Name, Last Name, Email, Company Name, and Phone Number to sign up. Actum's support team will use this information for verification purposes in order to create your account.
+
+Once your account is created (typically within less than 24 hours on business days), you will receive a welcome email with your new test account credentials.
+
+## Log into your Test Account
+
+To begin testing, you will be able to log into a test portal using the username and password provided by Actum's support team. Actum's portal is available at the following link: [https://join.actumprocessing.com](https://join.actumprocessing.com)
+
+It is recommended that you change your password immediately upon login. There is no need to create a separate API key to complete setup, as your username and password will allow you to authenticate to Actum's test enviroment, securely.
+
+##Create a Call
+
+To create a new API call, you'll first want to join the server at [https://join.actumprocessing.com/cgi-bin/dbs/man_trans.cg](https://join.actumprocessing.com/cgi-bin/dbs/man_trans.cgi). The following parameters are required:
+
+* `username` (your assigned username)
+* `password`(the password associated with your username, that can be changed)
+
+(unsure of the following):
+* `syspass` (a system password assigned your account, that cannot be changed)
+* `action_code` (this uses `D`)
+* `order id` (order number of a test transaction
+
+**Note:** All API request methods are `POST` only. In this case, `POST` requests act similarly to `GET` requests, in that the requests function primarily to return information pertaining to a specific resource.
+
+> To join the server, use this code in shell:
+```shell
+curl "HTTPS://join.actumprocessing.com/cgi-bin/dbs/man_trans.cgi"
+  -H "Authorization: meowmeowmeow"
+```
+> The content type you'll need to use is `application/x---www---form---urlencoded **or** multipart/form--data`.
+
+#### Understanding Responses
+
+Text to explain returns from different objects.
+
+#### Status Codes
+
+Explanation and table of status codes.
+
+#### Understanding Webhooks
+
+Explanation and examples
+
+### Step 4: Test your Calls
+
+Description
+
+In-app consequences of a return
+Payment retries and refunds
+
+
 > To authorize, use this code:
 
 ```ruby
