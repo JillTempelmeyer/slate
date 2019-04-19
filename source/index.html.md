@@ -19,13 +19,11 @@ search: true
 
 # Introduction
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+Actum's API allows developers to manage a variety of powerful tasks, such as creating and updating transacions, managing customer and payment data, and query settlement information. It was initially built for merchants requiring a high level of customization. Its same, customizable architecture now allows simple integration with software partners, as well. Actum uses HTTPS for all transactions to ensure the safety of consumer information.
 
-We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
+This guide provides an overview for our merchants and partners of how to start using Actum. If you have any questions throughout the process, please don't hesitate to contact us at [support@actumprocessing.com](support@actumprocessing.com).
 
-This example API documentation page was created with [Slate](https://github.com/lord/slate). Feel free to edit it and use it as a base for your own API's documentation.
-
-# Authentication
+# Getting Started
 
 > To authorize, use this code:
 
@@ -236,4 +234,3 @@ This endpoint deletes a specific kitten.
 Parameter | Description
 --------- | -----------
 ID | The ID of the kitten to delete
-
