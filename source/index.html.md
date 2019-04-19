@@ -25,6 +25,8 @@ This guide provides an overview for our merchants and partners of how to start u
 
 # Getting Started
 
+## Merchants
+
 > To authorize, use this code:
 
 ```ruby
@@ -63,7 +65,7 @@ Kittn expects for the API key to be included in all API requests to the server i
 You must replace <code>meowmeowmeow</code> with your personal API key.
 </aside>
 
-# Kittens
+# Customers and Accounts
 
 ## Get All Kittens
 
