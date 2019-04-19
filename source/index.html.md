@@ -27,6 +27,16 @@ This guide provides an overview for our merchants and partners of how to start u
 
 ## Merchants
 
+The `merchant` object represents account information pertaining to the merchant that submits a debit or credit transaction.
+
+Parameter | Description | Type        | Req |
+--------- | ----------- | ----------- | --- |
+| `parent_id` | Parent ID of merchant. [max Length = 8] | ALPHANUMERIC | Y |
+| `sub_id` | Sub ID of merchant. [max Length = 8] | ALPHANUMERIC | Y |
+| `pmt_type` | Type of payment being submitted (check, or `chk`, is the default value). | -- | N |
+| `response_location` | The `man_trans.cgi` script will respond to this URL with response variables if passed in. | Full path URL | N |
+
+
 > To authorize, use this code:
 
 ```ruby
@@ -124,10 +134,12 @@ This endpoint retrieves all kittens.
 
 ### Query Parameters
 
-Parameter | Default | Description
---------- | ------- | -----------
-include_cats | false | If set to true, the result will also include cats.
-available | true | If set to false, the result will include kittens that have already been adopted.
+Parameter | Description | Type        | Req |
+--------- | ----------- | ----------- | --- |
+| `parent_id` | Parent ID of merchant. [max Length = 8] | ALPHANUMERIC | Y |
+| `sub_id` | Sub ID of merchant. [max Length = 8] | ALPHANUMERIC | Y |
+| `pmt_type` | Type of payment being submitted (check, or `chk`, is the default value). | -- | N |
+| `response_location` | The `man_trans.cgi` script will respond to this URL with response variables if passed in. | Full path URL | N |
 
 <aside class="success">
 Remember — a happy kitten is an authenticated kitten!
