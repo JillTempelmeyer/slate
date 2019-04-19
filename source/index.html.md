@@ -25,8 +25,6 @@ This guide provides an overview for our merchants and partners of how to start u
 
 # Getting Started
 
-# Getting Started
-
 To get started using Actum's API, you'll want to follow these steps:
 
 ## Register for a Test Account
@@ -40,6 +38,12 @@ Once your account is created (typically within less than 24 hours on business da
 To begin testing, you will be able to log into a test portal using the username and password provided by Actum's support team. Actum's portal is available at the following link: [https://join.actumprocessing.com](https://join.actumprocessing.com)
 
 It is recommended that you change your password immediately upon login. There is no need to create a separate API key to complete setup, as your username and password will allow you to authenticate to Actum's test enviroment, securely.
+
+> To join the server, use this code in shell:
+```shell
+curl "HTTPS://join.actumprocessing.com/cgi-bin/dbs/man_trans.cgi"
+  -H "Authorization: meowmeowmeow"
+```
 
 ##Create a Call
 
@@ -55,11 +59,6 @@ To create a new API call, you'll first want to join the server at [https://join.
 
 **Note:** All API request methods are `POST` only. In this case, `POST` requests act similarly to `GET` requests, in that the requests function primarily to return information pertaining to a specific resource.
 
-> To join the server, use this code in shell:
-```shell
-curl "HTTPS://join.actumprocessing.com/cgi-bin/dbs/man_trans.cgi"
-  -H "Authorization: meowmeowmeow"
-```
 > The content type you'll need to use is `application/x---www---form---urlencoded **or** multipart/form--data`.
 
 #### Understanding Responses
@@ -74,7 +73,7 @@ Explanation and table of status codes.
 
 Explanation and examples
 
-### Step 4: Test your Calls
+## Step 4: Test your Calls
 
 Description
 
