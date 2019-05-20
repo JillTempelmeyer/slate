@@ -17,6 +17,14 @@ includes:
 search: true
 ---
 
+# Actum Integration Guide
+
+Actum's API allows developers to manage a variety of powerful tasks, such as creating and updating transacions, managing customer and payment data, and querying settlement information. It was initially built for merchants requiring a high level of customization. Its customizable architecture now enables simple integration with software partners, as well. Actum uses HTTPS for all transactions to ensure the safety of consumer information. 
+
+This guide provides an overview for our merchants and partners of how to start using Actum. If you have any questions throughout the process, please don't hesitate to contact us at [support@actumprocessing.com](support@actumprocessing.com).
+
+
+
 # Introduction
 
 Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
